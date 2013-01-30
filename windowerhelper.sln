@@ -1,0 +1,117 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "build", "build\build.vcproj", "{6A741187-493F-4736-83BD-46A97BD0D91E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{00DC8414-8B1A-495A-9154-2CF19C44ED5A} = {00DC8414-8B1A-495A-9154-2CF19C44ED5A}
+		{012B984A-4EF4-46E6-96CA-8DE38C77AEA1} = {012B984A-4EF4-46E6-96CA-8DE38C77AEA1}
+		{7E50C28C-55AA-4ADB-BC0F-4907A91897F9} = {7E50C28C-55AA-4ADB-BC0F-4907A91897F9}
+		{7D13ED9E-F1F5-4DCB-94D9-8586CB02ED0D} = {7D13ED9E-F1F5-4DCB-94D9-8586CB02ED0D}
+		{1C4077EB-4DEA-49F9-8384-A28A14C4C64C} = {1C4077EB-4DEA-49F9-8384-A28A14C4C64C}
+		{45AB57FB-2822-4471-8C3E-FB5B82D8C21D} = {45AB57FB-2822-4471-8C3E-FB5B82D8C21D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "windowerhelper.net", "windowerhelper.net\windowerhelper.net.csproj", "{7D13ED9E-F1F5-4DCB-94D9-8586CB02ED0D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{00DC8414-8B1A-495A-9154-2CF19C44ED5A} = {00DC8414-8B1A-495A-9154-2CF19C44ED5A}
+		{7E50C28C-55AA-4ADB-BC0F-4907A91897F9} = {7E50C28C-55AA-4ADB-BC0F-4907A91897F9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "windowerhelper-x86", "windowerhelper\windowerhelper-x86.vcproj", "{00DC8414-8B1A-495A-9154-2CF19C44ED5A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{641C5F36-32EE-4323-B740-992B651CF9D6} = {641C5F36-32EE-4323-B740-992B651CF9D6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "windowerhelper-x64", "windowerhelper\windowerhelper-x64.vcproj", "{7E50C28C-55AA-4ADB-BC0F-4907A91897F9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F28AB20C-B119-4DF4-9A8E-BC6D0B49CA97} = {F28AB20C-B119-4DF4-9A8E-BC6D0B49CA97}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "windowerhelper-x86-static", "windowerhelper\windowerhelper-x86-static.vcproj", "{012B984A-4EF4-46E6-96CA-8DE38C77AEA1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{641C5F36-32EE-4323-B740-992B651CF9D6} = {641C5F36-32EE-4323-B740-992B651CF9D6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "windowerhelper-x64-static", "windowerhelper\windowerhelper-x64-static.vcproj", "{1C4077EB-4DEA-49F9-8384-A28A14C4C64C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F28AB20C-B119-4DF4-9A8E-BC6D0B49CA97} = {F28AB20C-B119-4DF4-9A8E-BC6D0B49CA97}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libzmq-x86-static", "third-party\libzmq\builds\msvc\libzmq\libzmq-x86-static.vcproj", "{641C5F36-32EE-4323-B740-992B651CF9D6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libzmq-x64-static", "third-party\libzmq\builds\msvc\libzmq\libzmq-x64-static.vcproj", "{F28AB20C-B119-4DF4-9A8E-BC6D0B49CA97}"
+	ProjectSection(ProjectDependencies) = postProject
+		{641C5F36-32EE-4323-B740-992B651CF9D6} = {641C5F36-32EE-4323-B740-992B651CF9D6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "windowerhelper.java-x86", "windowerhelper.java\windowerhelper.java-x86.vcproj", "{D5E8D8A4-0643-4D60-9296-46364470676E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{012B984A-4EF4-46E6-96CA-8DE38C77AEA1} = {012B984A-4EF4-46E6-96CA-8DE38C77AEA1}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "windowerhelper.java-x64", "windowerhelper.java\windowerhelper.java-x64.vcproj", "{B8223D10-8642-4775-ABFE-1B0590B11DF2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1C4077EB-4DEA-49F9-8384-A28A14C4C64C} = {1C4077EB-4DEA-49F9-8384-A28A14C4C64C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "windowerhelper.java", "windowerhelper.java\windowerhelper.java.vcproj", "{45AB57FB-2822-4471-8C3E-FB5B82D8C21D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B8223D10-8642-4775-ABFE-1B0590B11DF2} = {B8223D10-8642-4775-ABFE-1B0590B11DF2}
+		{D5E8D8A4-0643-4D60-9296-46364470676E} = {D5E8D8A4-0643-4D60-9296-46364470676E}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D13ED9E-F1F5-4DCB-94D9-8586CB02ED0D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7D13ED9E-F1F5-4DCB-94D9-8586CB02ED0D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7D13ED9E-F1F5-4DCB-94D9-8586CB02ED0D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{7D13ED9E-F1F5-4DCB-94D9-8586CB02ED0D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{00DC8414-8B1A-495A-9154-2CF19C44ED5A}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{00DC8414-8B1A-495A-9154-2CF19C44ED5A}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{00DC8414-8B1A-495A-9154-2CF19C44ED5A}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{00DC8414-8B1A-495A-9154-2CF19C44ED5A}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{7E50C28C-55AA-4ADB-BC0F-4907A91897F9}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{7E50C28C-55AA-4ADB-BC0F-4907A91897F9}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{7E50C28C-55AA-4ADB-BC0F-4907A91897F9}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{7E50C28C-55AA-4ADB-BC0F-4907A91897F9}.Release|Mixed Platforms.Build.0 = Release|x64
+		{012B984A-4EF4-46E6-96CA-8DE38C77AEA1}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{012B984A-4EF4-46E6-96CA-8DE38C77AEA1}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{012B984A-4EF4-46E6-96CA-8DE38C77AEA1}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{012B984A-4EF4-46E6-96CA-8DE38C77AEA1}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{1C4077EB-4DEA-49F9-8384-A28A14C4C64C}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{1C4077EB-4DEA-49F9-8384-A28A14C4C64C}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{1C4077EB-4DEA-49F9-8384-A28A14C4C64C}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{1C4077EB-4DEA-49F9-8384-A28A14C4C64C}.Release|Mixed Platforms.Build.0 = Release|x64
+		{641C5F36-32EE-4323-B740-992B651CF9D6}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{641C5F36-32EE-4323-B740-992B651CF9D6}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{641C5F36-32EE-4323-B740-992B651CF9D6}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{641C5F36-32EE-4323-B740-992B651CF9D6}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{F28AB20C-B119-4DF4-9A8E-BC6D0B49CA97}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{F28AB20C-B119-4DF4-9A8E-BC6D0B49CA97}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{F28AB20C-B119-4DF4-9A8E-BC6D0B49CA97}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{F28AB20C-B119-4DF4-9A8E-BC6D0B49CA97}.Release|Mixed Platforms.Build.0 = Release|x64
+		{6A741187-493F-4736-83BD-46A97BD0D91E}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{6A741187-493F-4736-83BD-46A97BD0D91E}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{6A741187-493F-4736-83BD-46A97BD0D91E}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{6A741187-493F-4736-83BD-46A97BD0D91E}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{D5E8D8A4-0643-4D60-9296-46364470676E}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{D5E8D8A4-0643-4D60-9296-46364470676E}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{D5E8D8A4-0643-4D60-9296-46364470676E}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{D5E8D8A4-0643-4D60-9296-46364470676E}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{B8223D10-8642-4775-ABFE-1B0590B11DF2}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{B8223D10-8642-4775-ABFE-1B0590B11DF2}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{B8223D10-8642-4775-ABFE-1B0590B11DF2}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{B8223D10-8642-4775-ABFE-1B0590B11DF2}.Release|Mixed Platforms.Build.0 = Release|x64
+		{45AB57FB-2822-4471-8C3E-FB5B82D8C21D}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{45AB57FB-2822-4471-8C3E-FB5B82D8C21D}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{45AB57FB-2822-4471-8C3E-FB5B82D8C21D}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{45AB57FB-2822-4471-8C3E-FB5B82D8C21D}.Release|Mixed Platforms.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

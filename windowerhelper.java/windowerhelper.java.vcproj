@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="windowerhelper.java"
+	ProjectGUID="{45AB57FB-2822-4471-8C3E-FB5B82D8C21D}"
+	RootNamespace="build"
+	TargetFrameworkVersion="196613"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="$(ProjectDir)bin\$(ConfigurationName)\"
+			IntermediateDirectory="$(ProjectDir)bin\logs\$(ConfigurationName)\"
+			ConfigurationType="10"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="del /f /s /q &quot;$(ProjectDir)obj\$(ConfigurationName)\java\&quot;&#x0D;&#x0A;md &quot;$(ProjectDir)obj\$(ConfigurationName)\java\&quot;&#x0D;&#x0A;&#x0D;&#x0A;xcopy &quot;$(ProjectDir)res\*.*&quot; &quot;$(ProjectDir)obj\$(ConfigurationName)\java\&quot; /s /y&#x0D;&#x0A;xcopy &quot;$(ProjectDir)bin\$(ConfigurationName)\x86\*.dll&quot; &quot;$(ProjectDir)obj\$(ConfigurationName)\java\native\x86\&quot; /y&#x0D;&#x0A;xcopy &quot;$(ProjectDir)bin\$(ConfigurationName)\x64\*.dll&quot; &quot;$(ProjectDir)obj\$(ConfigurationName)\java\native\x64\&quot; /y&#x0D;&#x0A;&#x0D;&#x0A;cd &quot;$(ProjectDir)src\&quot;&#x0D;&#x0A;javac -source 5 -target 5 -d ..\obj\$(ConfigurationName)\java\ net\windower\helper\*.java&#x0D;&#x0A;&#x0D;&#x0A;del /f /s /q &quot;$(ProjectDir)bin\$(ConfigurationName)\java\&quot;&#x0D;&#x0A;md &quot;$(ProjectDir)bin\$(ConfigurationName)\java\&quot;&#x0D;&#x0A;&#x0D;&#x0A;cd &quot;$(ProjectDir)bin\$(ConfigurationName)\java\&quot;&#x0D;&#x0A;jar cf windowerhelper-4.0.jar -C ..\..\..\obj\$(ConfigurationName)\java\ .&#x0D;&#x0A;"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(ProjectDir)$(ConfigurationName)\"
+			IntermediateDirectory="$(ProjectDir)logs\$(ConfigurationName)\"
+			ConfigurationType="10"
+			CharacterSet="1"
+			WholeProgramOptimization="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="del /f /s /q &quot;$(ProjectDir)obj\$(ConfigurationName)\java\&quot;&#x0D;&#x0A;md &quot;$(ProjectDir)obj\$(ConfigurationName)\java\&quot;&#x0D;&#x0A;&#x0D;&#x0A;xcopy &quot;$(ProjectDir)res\*.*&quot; &quot;$(ProjectDir)obj\$(ConfigurationName)\java\&quot; /s /y&#x0D;&#x0A;xcopy &quot;$(ProjectDir)bin\$(ConfigurationName)\x86\*.dll&quot; &quot;$(ProjectDir)obj\$(ConfigurationName)\java\native\x86\&quot; /y&#x0D;&#x0A;xcopy &quot;$(ProjectDir)bin\$(ConfigurationName)\x64\*.dll&quot; &quot;$(ProjectDir)obj\$(ConfigurationName)\java\native\x64\&quot; /y&#x0D;&#x0A;&#x0D;&#x0A;cd &quot;$(ProjectDir)src\&quot;&#x0D;&#x0A;javac -source 5 -target 5 -d ..\obj\$(ConfigurationName)\java\ net\windower\helper\*.java&#x0D;&#x0A;&#x0D;&#x0A;del /f /s /q &quot;$(ProjectDir)bin\$(ConfigurationName)\java\&quot;&#x0D;&#x0A;md &quot;$(ProjectDir)bin\$(ConfigurationName)\java\&quot;&#x0D;&#x0A;&#x0D;&#x0A;cd &quot;$(ProjectDir)bin\$(ConfigurationName)\java\&quot;&#x0D;&#x0A;jar cf windowerhelper-4.0.jar -C ..\..\..\obj\$(ConfigurationName)\java\ .&#x0D;&#x0A;"
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>
