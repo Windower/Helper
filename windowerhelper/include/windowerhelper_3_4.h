@@ -28,14 +28,14 @@
 #pragma once
 
 #if _MSC_VER < 1700
-#	ifdef _M_X64 
-#		define WINDOWER_64_BIT
-#	endif
+#   ifdef _M_X64 
+#       define WINDOWER_64_BIT
+#   endif
 #else
-#	include <stdint.h>
-#	if UINTPTR_MAX == 0xFFFFFFFF
-#		define WINDOWER_64_BIT
-#	endif
+#   include <stdint.h>
+#   if UINTPTR_MAX == 0xFFFFFFFF
+#       define WINDOWER_64_BIT
+#   endif
 #endif
 
 #ifdef WINDOWER_64_BIT

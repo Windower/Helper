@@ -2,39 +2,39 @@
 ; 
 ; Copyright © 2012 Windower Team
 
-LIBRARY	"WindowerHelper"
+LIBRARY "WindowerHelper"
 EXPORTS
 
-	CreateKeyboardHelper
-	DeleteKeyboardHelper
-	CKHSendString
-	CKHSetKey
-	CKHBlockInput
+    CreateKeyboardHelper
+    DeleteKeyboardHelper
+    CKHSendString
+    CKHSetKey
+    CKHBlockInput
 
-	CreateConsoleHelper
-	DeleteConsoleHelper
-	CCHGetCommandID
-	CCHIsNewCommand
-	CCHGetRawCommand
-	CCHGetArgCount
-	CCHGetArg
+    CreateConsoleHelper
+    DeleteConsoleHelper
+    CCHGetCommandID
+    CCHIsNewCommand
+    CCHGetRawCommand
+    CCHGetArgCount
+    CCHGetArg
 
-	CreateTextHelper
-	DeleteTextHelper
-	CTHCreateTextObject
-	CTHDeleteTextObject
-	CTHSetText
-	CTHSetVisibility
-	CTHSetLocation
-	CTHSetColor
-	CTHSetBGColor
-	CTHSetBGVisibility
-	CTHSetFont
-	CTHSetBold
-	CTHSetItalic
-	CTHSetBGBorderSize
-	CTHSetRightJustified
-	CTHFlushCommands
-	
-	GetWHVersion
-	
+    CreateTextHelper
+    DeleteTextHelper
+    CTHCreateTextObject
+    CTHDeleteTextObject
+    CTHSetText
+    CTHSetVisibility
+    CTHSetLocation
+    CTHSetColor
+    CTHSetBGColor
+    CTHSetBGVisibility
+    CTHSetFont
+    CTHSetBold
+    CTHSetItalic
+    CTHSetBGBorderSize
+    CTHSetRightJustified
+    CTHFlushCommands
+    
+    GetWHVersion
+    

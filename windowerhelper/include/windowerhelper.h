@@ -28,9 +28,9 @@
 #pragma once
 
 #ifdef WINDOWER_HELPER_USE_3_4_API
-#	include "windowerhelper_3_4.h"
+#   include "windowerhelper_3_4.h"
 #else
-#	include "windowerhelper_4_0.h"
+#   include "windowerhelper_4_0.h"
 #endif
 
 #endif

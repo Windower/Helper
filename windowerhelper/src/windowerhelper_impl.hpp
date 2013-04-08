@@ -10,9 +10,9 @@
 #pragma once
 
 #ifdef WINDOWER_HELPER_STATIC
-#	define WINDOWER_HELPER_API
+#   define WINDOWER_HELPER_API
 #else
-#	define WINDOWER_HELPER_API __declspec(dllexport)
+#   define WINDOWER_HELPER_API __declspec(dllexport)
 #endif
 
 #define WINDOWER_HELPER_NO_CLASSES
