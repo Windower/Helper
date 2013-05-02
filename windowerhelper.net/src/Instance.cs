@@ -109,11 +109,12 @@
                 IntPtr ptr;
 
                 ErrorCode result = NativeMethods.windower_next_command(this.handle, out command);
-                if (result != ErrorCode.None && result != ErrorCode.OutOfRange)
+                if (result == ErrorCode.OutOfRange)
                 {
-                    throw new WindowerException(result);
+                    return null;
                 }
 
+                WindowerException.Check(result);
                 WindowerException.Check(NativeMethods.windower_command_length(command, out length));
                 WindowerException.Check(NativeMethods.windower_command_string(command, out ptr));
 
