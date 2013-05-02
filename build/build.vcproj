@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="build"
+	ProjectGUID="{6A741187-493F-4736-83BD-46A97BD0D91E}"
+	RootNamespace="build"
+	TargetFrameworkVersion="196613"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="$(ProjectDir)$(ConfigurationName)\"
+			IntermediateDirectory="$(ProjectDir)logs\$(ConfigurationName)\"
+			ConfigurationType="10"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="del /f /s /q &quot;$(OutDir)&quot;&#x0D;&#x0A;md &quot;$(OutDir)&quot;&#x0D;&#x0A;&#x0D;&#x0A;xcopy &quot;$(SolutionDir)windowerhelper\bin\$(ConfigurationName)\*.*&quot; &quot;$(OutDir)lib\&quot; /s /y&#x0D;&#x0A;xcopy &quot;$(SolutionDir)windowerhelper\include\*.*&quot; &quot;$(OutDir)include\&quot; /s /y&#x0D;&#x0A;xcopy &quot;$(SolutionDir)windowerhelper.net\bin\$(ConfigurationName)\*.*&quot; &quot;$(OutDir)lib\&quot; /s /y&#x0D;&#x0A;xcopy &quot;$(SolutionDir)windowerhelper.java\bin\$(ConfigurationName)\java\*.*&quot; &quot;$(OutDir)lib\&quot; /s /y&#x0D;&#x0A;"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(ProjectDir)$(ConfigurationName)\"
+			IntermediateDirectory="$(ProjectDir)logs\$(ConfigurationName)\"
+			ConfigurationType="10"
+			CharacterSet="1"
+			WholeProgramOptimization="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="del /f /s /q &quot;$(OutDir)&quot;&#x0D;&#x0A;md &quot;$(OutDir)&quot;&#x0D;&#x0A;&#x0D;&#x0A;xcopy &quot;$(SolutionDir)windowerhelper\bin\$(ConfigurationName)\*.*&quot; &quot;$(OutDir)lib\&quot; /s /y&#x0D;&#x0A;xcopy &quot;$(SolutionDir)windowerhelper\include\*.*&quot; &quot;$(OutDir)include\&quot; /s /y&#x0D;&#x0A;xcopy &quot;$(SolutionDir)windowerhelper.net\bin\$(ConfigurationName)\*.*&quot; &quot;$(OutDir)lib\&quot; /s /y&#x0D;&#x0A;xcopy &quot;$(SolutionDir)windowerhelper.java\bin\$(ConfigurationName)\java\*.*&quot; &quot;$(OutDir)lib\&quot; /s /y&#x0D;&#x0A;"
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>
