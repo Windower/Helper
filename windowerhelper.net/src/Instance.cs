@@ -107,9 +107,16 @@
             {
                 uint length;
                 IntPtr ptr;
-                WindowerException.Check(NativeMethods.windower_next_command(this.handle, out command));
+
+                ErrorCode result = NativeMethods.windower_next_command(this.handle, out command);
+                if (result != ErrorCode.None && result != ErrorCode.OutOfRange)
+                {
+                    throw new WindowerException(result);
+                }
+
                 WindowerException.Check(NativeMethods.windower_command_length(command, out length));
                 WindowerException.Check(NativeMethods.windower_command_string(command, out ptr));
+
                 byte[] buffer = new byte[length];
                 Marshal.Copy(ptr, buffer, 0, (int)length);
                 return UTF8.GetString(buffer);
